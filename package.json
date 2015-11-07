@@ -1,0 +1,42 @@
+{
+  "name": "core-arbitrary-precision",
+  "version": "0.0.0",
+  "description": "Core arbitrary precision abstraction",
+  "main": "src/core-arbitrary-precision.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiercejudo/core-arbitrary-precision.git"
+  },
+  "keywords": [
+    "feature scaling",
+    "normalisation",
+    "normalization",
+    "scale",
+    "rescale"
+  ],
+  "author": "Javier Cejudo <javier@javiercejudo.com> (http://www.javiercejudo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javiercejudo/core-arbitrary-precision/issues"
+  },
+  "homepage": "https://github.com/javiercejudo/core-arbitrary-precision#readme",
+  "devDependencies": {
+    "floating": "^1.2.0",
+    "floating-adapter": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-coverage": "^0.3.38",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-istanbul": "^0.10.2",
+    "gulp-mocha": "^2.1.3",
+    "rimraf": "^2.4.3",
+    "should": "^7.1.1"
+  },
+  "dependencies": {
+    "assert-error": "^1.0.3",
+    "equals-arbitrary-precision": "^1.0.1",
+    "lodash.isstring": "^3.0.1"
+  }
+}
