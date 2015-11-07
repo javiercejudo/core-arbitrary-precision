@@ -2,7 +2,7 @@
   "name": "core-arbitrary-precision",
   "version": "1.0.0",
   "description": "Core arbitrary precision abstraction",
-  "main": "src/core-arbitrary-precision.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "gulp test"
   },
