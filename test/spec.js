@@ -45,6 +45,20 @@ describe('core functionality', function() {
     });
   });
 
+  describe('implementation', function() {
+    it('should expose the implementation constructor', function() {
+      new Decimal.Impl(2).plus(new Decimal.Impl(3)).valueOf().should.be.exactly(5);
+    });
+
+    it('should be able to set the current precision', function() {
+      var initialPrecision = Decimal.getPrecision();
+
+      Decimal.setPrecision(42);
+      Decimal.getPrecision().should.be.exactly(42);
+      Decimal.setPrecision(initialPrecision);
+    });
+  });
+
   describe('toString, valueOf and JSON', function() {
     it('should be able to return a string representation', function() {
       var decimalOne = new Decimal('1');

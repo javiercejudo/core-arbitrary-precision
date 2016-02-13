@@ -23,6 +23,7 @@ module.exports = function factory(adapter) {
   Decimal.getPrecision = getPrecision;
   Decimal.setPrecision = setPrecision;
   Decimal.JSONReviver = JSONReviver;
+  Decimal.Impl = Impl;
 
   var p = Decimal.prototype;
 
