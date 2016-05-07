@@ -71,9 +71,9 @@ Number(decimalThird); // => 1
 ```js
 var decimalOne = new Decimal('1');
 
-var stringified = JSON.stringify([decimalOne]); // => '["1"]'
+var stringified = JSON.stringify(decimalOne); // => '"1"'
 
-JSON.parse(stringified, decimalOne.JSONReviver)[0]; // => new decimalOne('1')
+JSON.parse(stringified, decimalOne.reviver); // => new decimalOne('1')
 ```
 
 See [spec](test/spec.js).
