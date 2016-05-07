@@ -81,11 +81,11 @@ describe('core functionality', function() {
       Decimal40.setPrecision(40);
 
       var decimalOne = new Decimal40('1');
-      var stringified = JSON.stringify([decimalOne]);
+      var stringified = JSON.stringify(decimalOne);
 
-      stringified.should.be.exactly('["1"]');
+      stringified.should.be.exactly('"1"');
 
-      JSON.parse(stringified, Decimal40.JSONReviver)[0].should.eql(decimalOne);
+      JSON.parse(stringified, Decimal40.reviver).should.eql(decimalOne);
     });
   });
 });

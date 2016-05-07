@@ -22,7 +22,7 @@ module.exports = function factory(adapter) {
   Decimal.getAdapter = getAdapter;
   Decimal.getPrecision = getPrecision;
   Decimal.setPrecision = setPrecision;
-  Decimal.JSONReviver = JSONReviver;
+  Decimal.reviver = reviver;
   Decimal.Impl = Impl;
 
   var p = Decimal.prototype;
@@ -47,11 +47,7 @@ module.exports = function factory(adapter) {
     adapter.setPrecision(Impl, n);
   }
 
-  function JSONReviver(key, x) {
-    if (key === '') {
-      return x;
-    }
-
+  function reviver(key, x) {
     return new Decimal(x);
   }
 
