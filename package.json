@@ -1,6 +1,6 @@
 {
   "name": "core-arbitrary-precision",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Core arbitrary precision abstraction",
   "main": "src/index.js",
   "scripts": {
