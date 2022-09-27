@@ -73,7 +73,7 @@ var decimalOne = new Decimal('1');
 
 var stringified = JSON.stringify(decimalOne); // => '"1"'
 
-JSON.parse(stringified, decimalOne.reviver); // => new decimalOne('1')
+JSON.parse(stringified, Decimal.reviver); // => new Decimal('1')
 ```
 
 See [spec](test/spec.js).
